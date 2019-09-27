@@ -1,4 +1,4 @@
-# Predict the Customer's Response to Starbucks Offer
+# Predict Customers' Response to Starbucks Offer
 
 ## Project Overview
 
