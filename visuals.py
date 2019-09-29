@@ -16,6 +16,10 @@ import pandas as pd
 from time import time
 from sklearn.metrics import f1_score, accuracy_score
 
+
+
+
+
 def evaluate(results, accuracy, f1):
     """
     Visualization code to display results of various learners.
@@ -28,7 +32,7 @@ def evaluate(results, accuracy, f1):
     """
   
     # Create figure
-    fig, ax = pl.subplots(2, 3, figsize = (11,7))
+    fig, ax = pl.subplots(2, 3, figsize = (11, 7))
 
     # Constants
     bar_width = 0.3
@@ -43,13 +47,13 @@ def evaluate(results, accuracy, f1):
                 ax[j//3, j%3].bar(i+k*bar_width, results[learner][i][metric], width = bar_width, color = colors[k])
                 ax[j//3, j%3].set_xticks([0.45, 1.45, 2.45])
                 ax[j//3, j%3].set_xticklabels(["1%", "10%", "100%"])
-                ax[j//3, j%3].set_xlabel("Training Set Size")
+   #             ax[j//3, j%3].set_xlabel("Training Set Size")
                 ax[j//3, j%3].set_xlim((-0.1, 3.0))
     
     # Add unique y-labels
     ax[0, 0].set_ylabel("Time (in seconds)")
     ax[0, 1].set_ylabel("Accuracy Score")
-    ax[0, 2].set_ylabel("F-score")
+    ax[0, 2].set_ylabel("F1-score")
     ax[1, 0].set_ylabel("Time (in seconds)")
     ax[1, 1].set_ylabel("Accuracy Score")
     ax[1, 2].set_ylabel("F-score")
@@ -57,7 +61,7 @@ def evaluate(results, accuracy, f1):
     # Add titles
     ax[0, 0].set_title("Model Training")
     ax[0, 1].set_title("Accuracy Score on Training Subset")
-    ax[0, 2].set_title("F-score on Training Subset")
+    ax[0, 2].set_title("F1-score on Training Subset")
     ax[1, 0].set_title("Model Predicting")
     ax[1, 1].set_title("Accuracy Score on Testing Set")
     ax[1, 2].set_title("F-score on Testing Set")
