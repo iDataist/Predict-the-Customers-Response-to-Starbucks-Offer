@@ -18,7 +18,7 @@ The goal of this project is to combine transaction, demographic and offer data t
 I plan to use running time, accuracy score and f1 score to measure the performance of the supervised learners.
 
 ## Document Description
-The raw data of this project is stored in the [data folder](https://github.com/iDataist/Predict-the-Customer-s-Response-to-Starbucks-Offer/tree/master/data), with the data dictionary shown below. The analysis, methodology, results and conclusion are documented in [this](https://github.com/iDataist/Predict-the-Customer-s-Response-to-Starbucks-Offer/blob/master/Starbucks.ipynb) notebook. The findings are communicated in my personal [blog](https://idataist.com/2019/09/29/how-to-predict-customers-response-to-a-starbucks-offer/).
+The raw data of this project is stored in the [data folder](https://github.com/iDataist/Predict-the-Customer-s-Response-to-Starbucks-Offer/tree/master/data), with the data dictionary shown below. The analysis, methodology, results and conclusion are documented in [Starbucks.ipynb](https://github.com/iDataist/Predict-the-Customer-s-Response-to-Starbucks-Offer/blob/master/Starbucks.ipynb). The findings are communicated in my personal [blog](https://idataist.com/2019/09/29/how-to-predict-customers-response-to-a-starbucks-offer/).
 
 The data is contained in three files:
 
