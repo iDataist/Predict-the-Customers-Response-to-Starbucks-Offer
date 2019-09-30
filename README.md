@@ -48,3 +48,9 @@ Here is the schema and explanation of each variable in the files:
 * person (str) - customer id
 * time (int) - time in hours since start of test. The data begins at time t=0
 * value - (dict of strings) - either an offer id or transaction amount depending on the record
+
+## Results
+In this project, I first explored, visualized and combined the data. I generated a function choose_type which allows users to choose the offer types (bogo, discount or informational). Then I built several supervised learning models to predict whether to extend that offer type to a customer based on the demographic and transaction data. I used accuracy and f1 scores to evaluate the performance. I also considered the performance of the naive evaluator, which predicted that we should give offers to everyone. I chose Random Forest as the learner because it is a good balance between performance and running time. Lastly, I used grid search to tune the model. The optimized model has the accuracy of 0.83 and the f1 score of 0.85.
+To summarize, I built a model that predicts customers' response to an offer, utilizing Random Forest Classifiers. Specifically, the user of this model could choose an offer type, and identify the customers who are the ideal targets of the offer.
+
+Future imporovement could include recommendations on the communication channels and reward amounts. Currently, the model only provides predictions on the customers who are more likely to respond to an offer type. The next step would be to identify the ideal channels to communicate the offers. In addition, regression models could be implemented to identify the optimal reward amounts.
