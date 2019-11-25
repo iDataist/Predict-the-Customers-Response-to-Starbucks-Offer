@@ -18,7 +18,7 @@ The goal of this project is to combine transaction, demographic and offer data t
 I plan to use running time, accuracy score and f1 score to measure the performance of the supervised learners.
 
 ## Document Description
-The raw data of this project is stored in the [data folder](https://github.com/iDataist/Predict-the-Customer-s-Response-to-Starbucks-Offer/tree/master/data), with the data dictionary shown below. The analysis, methodology, results and conclusion are documented in [Starbucks.ipynb](https://github.com/iDataist/Predict-the-Customer-s-Response-to-Starbucks-Offer/blob/master/Starbucks.ipynb). The findings are communicated in my personal [blog](https://idataist.com/2019/09/29/how-to-predict-customers-response-to-a-starbucks-offer/).
+The raw data of this project is stored in the [data folder](https://github.com/iDataist/Predict-the-Customer-s-Response-to-Starbucks-Offer/tree/master/data), with the data dictionary shown below. The analysis, methodology, results and conclusion are documented in [Starbucks.ipynb](https://github.com/iDataist/Predict-the-Customer-s-Response-to-Starbucks-Offer/blob/master/Starbucks.ipynb). 
 
 The data is contained in three files:
 
@@ -51,6 +51,7 @@ Here is the schema and explanation of each variable in the files:
 
 ## Results
 In this project, I first explored, visualized and combined the data. I generated a function choose_type which allows users to choose the offer types (bogo, discount or informational). Then I built several supervised learning models to predict whether to extend that offer type to a customer based on the demographic and transaction data. I used accuracy and f1 scores to evaluate the performance. I also considered the performance of the naive evaluator, which predicted that we should give offers to everyone. I chose Random Forest as the learner because it is a good balance between performance and running time. Lastly, I used grid search to tune the model. The optimized model has the accuracy of 0.83 and the f1 score of 0.85.
+
 To summarize, I built a model that predicts customers' response to an offer, utilizing Random Forest Classifiers. Specifically, the user of this model could choose an offer type, and identify the customers who are the ideal targets of the offer.
 
 Future imporovement could include recommendations on the communication channels and reward amounts. Currently, the model only provides predictions on the customers who are more likely to respond to an offer type. The next step would be to identify the ideal channels to communicate the offers. In addition, regression models could be implemented to identify the optimal reward amounts.
